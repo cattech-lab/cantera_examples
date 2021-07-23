@@ -9,6 +9,10 @@ https://cattech-lab.com/science-tools/cantera-info/
 adiabatic_flame_temperature.py   
 https://cattech-lab.com/science-tools/cantera-adiabatic-flame-temperature/
 
+*バーナー火炎を計算する
+burner_flame.py
+https://cattech-lab.com/science-tools/cantera-burner-flame/
+
 *触媒反応を計算する   
 catalytic_combustion.py   
 https://cattech-lab.com/science-tools/cantera-catalytic-combustion/
@@ -61,11 +65,12 @@ https://cattech-lab.com/science-tools/cantera-wall-heat-transfer/
 ## 開発環境
 Anaconda3  
 Python3.7
+Cantera 2.4.0 - 2.5.1
 
 ## 作成者
 株式会社キャットテックラボ  
 https://cattech-lab.com/
 
 ## ライセンス
-Copyright (c) 2020 CATTech.LAB Co., Ltd.  
+Copyright (c) 2020-2021 CATTech.LAB Co., Ltd.  
 The source codes are licensed under [the MIT license](https://opensource.org/licenses/MIT).
