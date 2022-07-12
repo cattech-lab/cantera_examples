@@ -11,7 +11,7 @@ phi = 0.9
 width = 0.03  # m
 
 # IdealGasMix object used to compute mixture properties
-gas = ct.Solution('gri30.xml', 'gri30_mix')
+gas = ct.Solution('gri30.yaml')
 gas.TP = Tin, p
 gas.set_equivalence_ratio(phi, 'CH4', 'O2:1.0, N2:3.76')
 
@@ -20,7 +20,7 @@ f = ct.FreeFlame(gas, width=width)
 f.set_refine_criteria(ratio=3, slope=0.07, curve=0.14)
 
 f.solve(loglevel=1, auto=True)
-print('\nmixture-averaged flamespeed = {:7f} m/s\n'.format(f.u[0]))
+print('\nmixture-averaged flamespeed = {:7f} m/s\n'.format(f.velocity[0]))
 
 plt.figure('Fig.1')
 plt.subplot(2,1,1)
@@ -29,7 +29,7 @@ plt.xlabel('Axial distance [m]')
 plt.ylabel('Temperature [K]')
 plt.grid(True)
 plt.subplot(2,1,2)
-plt.plot(f.grid, f.u)
+plt.plot(f.grid, f.velocity)
 plt.xlabel('Axial distance [m]')
 plt.ylabel('Flame speed [m/s]')
 plt.tight_layout()
