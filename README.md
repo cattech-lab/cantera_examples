@@ -72,5 +72,5 @@ Cantera 2.4.0 - 2.6.0
 https://cattech-lab.com/
 
 ## ライセンス
-Copyright (c) 2020-2021 CATTech.LAB Co., Ltd.  
+Copyright (c) 2020-2022 CATTech.LAB Co., Ltd.  
 The source codes are licensed under [the MIT license](https://opensource.org/licenses/MIT).
