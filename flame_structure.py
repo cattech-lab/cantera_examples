@@ -13,7 +13,7 @@ phi = 1.0 # equivalence ratio
 width = 2.0 # region width [m]
 
 # IdealGasMix object used to compute mixture properties
-gas = ct.Solution('sandiego20161214_H2only.cti')
+gas = ct.Solution('sandiego20161214_H2only.yaml')
 gas.TP = Tin, p
 gas.set_equivalence_ratio(phi, 'H2', 'O2:1.0, N2:3.76')
 

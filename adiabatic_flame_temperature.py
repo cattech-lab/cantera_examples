@@ -4,7 +4,7 @@ temp = 300
 p = ct.one_atm
 phi = 1.0
 
-gas = ct.Solution('gri30.cti')
+gas = ct.Solution('gri30.yaml')
 gas.TP = temp, p
 gas.set_equivalence_ratio(phi, 'CH4', 'O2:1.0, N2:3.76')
 gas.equilibrate('HP')
@@ -13,7 +13,7 @@ print(gas.report())
 
 print('------------------------------------------------------')
 
-species = {S.name: S for S in ct.Species.listFromFile('gri30.cti')}
+species = {S.name: S for S in ct.Species.list_from_file('gri30.yaml')}
 complete_species = [species[S] for S in ('CH4','O2','N2','CO2','H2O')]
 gas2 = ct.Solution(thermo='IdealGas', species=complete_species)
 gas2.TP = temp, p
