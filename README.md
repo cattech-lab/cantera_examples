@@ -64,8 +64,8 @@ https://cattech-lab.com/science-tools/cantera-wall-heat-transfer/
 
 ## 開発環境
 Anaconda3  
-Python3.7  
-Cantera 2.4.0 - 2.5.1
+Python3.7 - 3.10
+Cantera 2.4.0 - 2.6.0
 
 ## 作成者
 株式会社キャットテックラボ  
