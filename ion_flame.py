@@ -8,7 +8,7 @@ phi = 1.0
 width =  0.03 # [m]
 
 # IdealGasMix object used to compute mixture properties
-gas = ct.Solution('gri30_ion.cti')
+gas = ct.Solution('gri30_ion.yaml')
 gas.TP = Tin, p
 gas.set_equivalence_ratio(phi, 'CH4', 'O2:1.0, N2:3.76')
 

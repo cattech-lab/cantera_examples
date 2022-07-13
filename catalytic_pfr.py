@@ -14,14 +14,14 @@ area_cat_vol = 3149.0 # catalyst area [m2/m3]
 porosity = 1.0 # catalyst porosity
 
 # define object gas
-fcti = 'ptcombust.cti'
-gas = ct.Solution(fcti, 'gas')
+file_name = 'ptcombust.yaml'
+gas = ct.Solution(file_name, 'gas')
 gas.TPX = Tin, p, comp
 mdot = vin * area * gas.density
 dx = length / n_reactor
 
 # define object surface
-surf = ct.Interface(fcti, 'Pt_surf', [gas])
+surf = ct.Interface(file_name, 'Pt_surf', [gas])
 surf.TP = Tin, p
 
 # define object reactor

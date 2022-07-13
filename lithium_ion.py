@@ -6,13 +6,13 @@ from scipy.optimize import fsolve
 import matplotlib.pyplot as plt
 
 # define object
-inputCTI = 'lithium_ion_battery.cti'
-anode = ct.Solution(inputCTI, 'anode')
-cathode = ct.Solution(inputCTI, 'cathode')
-elde = ct.Solution(inputCTI, 'electron')
-elyte = ct.Solution(inputCTI, 'electrolyte')
-anode_interface = ct.Interface(inputCTI, 'edge_anode_electrolyte', [anode, elde, elyte])
-cathode_interface = ct.Interface(inputCTI, 'edge_cathode_electrolyte', [cathode, elde, elyte])
+input_file = 'lithium_ion_battery.yaml'
+anode = ct.Solution(input_file, 'anode')
+cathode = ct.Solution(input_file, 'cathode')
+elde = ct.Solution(input_file, 'electron')
+elyte = ct.Solution(input_file, 'electrolyte')
+anode_interface = ct.Interface(input_file, 'edge_anode_electrolyte', [anode, elde, elyte])
+cathode_interface = ct.Interface(input_file, 'edge_cathode_electrolyte', [cathode, elde, elyte])
 
 # lithium mole fractions
 X_Li_an = np.arange(0.005, 0.995, 0.02)

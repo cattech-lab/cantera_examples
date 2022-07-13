@@ -14,11 +14,11 @@ width = 0.1 # inlet/surface separation [m]
 comp = 'CH4:0.095, O2:0.21, N2:0.78, AR:0.01' # inlet composition
 
 # gas object
-gas = ct.Solution('ptcombust.cti', 'gas')
+gas = ct.Solution('ptcombust.yaml', 'gas')
 gas.TPX = tinlet, p, comp
 
 # interface object
-surf_phase = ct.Interface('ptcombust.cti', 'Pt_surf', [gas])
+surf_phase = ct.Interface('ptcombust.yaml', 'Pt_surf', [gas])
 surf_phase.TP = tsurf, p
 
 # integrate the coverage equations in time for 1 s, for initial 

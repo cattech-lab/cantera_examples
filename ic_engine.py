@@ -25,7 +25,7 @@ p_out = 1.0e5 # [Pa]
 c_out = 'O2:1.0, N2:3.76'
 
 # Reaction mechanism name
-reaction_mechanism = 'reduced_247.cti'
+reaction_mechanism = 'reduced_247.yaml'
 
 # Simulation time
 ca_start = -144.0 # start CA [deg]

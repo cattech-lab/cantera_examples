@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import cantera as ct
 
 # conditions
-gas = ct.Solution('gri30.xml')
+gas = ct.Solution('gri30.yaml')
 temp = 1500.0
 pres = ct.one_atm
 phi = 1.0

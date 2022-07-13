@@ -12,7 +12,7 @@ area = 1e-4 # cross section area [m2]
 n_reactor = 200 # number of divided reactor
 
 # define object
-gas = ct.Solution('gri30.cti')
+gas = ct.Solution('gri30.yaml')
 gas.TPX = Tin, p, comp
 mdot = vin * area * gas.density
 dx = length / n_reactor
