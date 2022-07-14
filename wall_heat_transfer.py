@@ -1,28 +1,28 @@
 
 import cantera as ct
 import csv
+import math
 
 # Simulation parameters
 p = ct.one_atm  # pressure [Pa]
 Tin = 20.0 + 273.15  # inlet temperature [K]
-comp = 'H2O(L):1' 
-vin = 0.1 # inlet velocity [m/s]
+comp = 'O2:1.0, N2:3.76' 
+vin = 1.0 # inlet velocity [m/s]
 length = 2.0 # reactor length [m]
-area = 7.85398e-5 # cross section area [m2]
+area = math.pi * 0.1 * 0.1 / 4.0 # cross section area [m2]
 n_reactor = 200 # number of divided reactor
 
 Tout = 100.0 + 273.15 # outer temperature [K] 
-area_wall = 0.0628329 # heat transfer wall area [m2]
-ht = 700.0 # heat transfer coef. [W/m2/K]
+area_wall = math.pi * 0.1 * length # heat transfer wall area [m2]
+ht = 50.0 # heat transfer coef. [W/m2/K]
 
 # define object
-gas = ct.Solution('water.cti', 'liquid_water')
+gas = ct.Solution('gri30.yaml')
 gas.TPX = Tin, p, comp
 mdot = vin * area * gas.density
 dx = length / n_reactor
 
-#r = ct.IdealGasReactor(gas)
-r = ct.Reactor(gas)  # since water is not ideal gas
+r = ct.IdealGasReactor(gas)
 r.volume = area * dx
 
 upstream = ct.Reservoir(gas, name='upstream')
