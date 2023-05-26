@@ -2,6 +2,10 @@
 ## 概要
 詳細化学反応計算用プログラムCanteraのサンプルプログラムです。 
 
+Canteraの公式ページ   
+https://cantera.org/
+
+
 詳細は以下のページを参照してください。   
 https://cattech-lab.com/science-tools/cantera-info/
 
@@ -74,3 +78,5 @@ https://cattech-lab.com/
 ## ライセンス
 Copyright (c) 2020-2022 CATTech.LAB Co., Ltd.  
 The source codes are licensed under [the MIT license](https://opensource.org/licenses/MIT).
+
+Cantera is licensed under a permissive 3-Clause BSD license.
