@@ -15,7 +15,7 @@ print('------------------------------------------------------')
 
 species = {S.name: S for S in ct.Species.list_from_file('gri30.yaml')}
 complete_species = [species[S] for S in ('CH4','O2','N2','CO2','H2O')]
-gas2 = ct.Solution(thermo='IdealGas', species=complete_species)
+gas2 = ct.Solution(thermo='ideal-gas', species=complete_species)
 gas2.TP = temp, p
 gas2.set_equivalence_ratio(phi, 'CH4', 'O2:1.0, N2:3.76')
 gas2.equilibrate('HP')
