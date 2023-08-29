@@ -8,7 +8,7 @@ p = 1.3e6
 phi = 1.0
 
 # define gas state
-gas = ct.Solution('LLNL_heptane_160.cti')
+gas = ct.Solution('LLNL_heptane_160.yaml')
 gas.TP = temp, p
 gas.set_equivalence_ratio(phi, 'nc7h16', 'o2:1.0, n2:3.76')
 states = ct.SolutionArray(gas, extra=['t'])

@@ -37,4 +37,4 @@ sim.solve(loglevel=1, auto=True)
 sim.show_solution()
 
 # write csv file 
-sim.write_csv('catalytic_combustion.csv', quiet=False)
+sim.save('catalytic_combustion.csv', basis='mole', overwrite=True)

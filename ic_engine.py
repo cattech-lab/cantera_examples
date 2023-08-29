@@ -68,7 +68,7 @@ piston.area = area  # piston area
 def piston_speed(t):
     ca = crank_angle(t)
     return -2.0 * np.pi * rps * (r_ca * np.sin(ca) + r_ca**2 * np.sin(2.0 * ca) / 2.0 / np.sqrt(conrod**2 - r_ca**2 * np.sin(ca)**2))
-piston.set_velocity(piston_speed)  # piston speed
+piston.velocity = piston_speed  # piston speed
 
 # set up time
 t_sim = (ca_end - ca_start) / rps / 360.0  # simulation time
