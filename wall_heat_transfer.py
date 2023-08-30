@@ -28,7 +28,7 @@ r.volume = area * dx
 upstream = ct.Reservoir(gas, name='upstream')
 downstream = ct.Reservoir(gas, name='downstream')
 m = ct.MassFlowController(upstream, r, mdot=mdot)
-v = ct.PressureController(r, downstream, master=m, K=1.0e-5)
+v = ct.PressureController(r, downstream, primary=m, K=1.0e-5)
 
 gas.TPX = Tout, p, comp
 outer = ct.Reservoir(gas)

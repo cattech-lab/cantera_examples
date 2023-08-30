@@ -32,7 +32,7 @@ r.volume = vol
 upstream = ct.Reservoir(gas, name='upstream')
 downstream = ct.Reservoir(gas, name='downstream')
 m = ct.MassFlowController(upstream, r, mdot=mdot)
-v = ct.PressureController(r, downstream, master=m, K=1.0e-5)
+v = ct.PressureController(r, downstream, primary=m, K=1.0e-5)
 
 area_cat = area_cat_vol * vol
 rsurf = ct.ReactorSurface(surf, r, A=area_cat)
