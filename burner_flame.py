@@ -27,4 +27,4 @@ f.solve(loglevel=1, auto=True)
 f.show_solution()
 
 # write the velocity, temperature, density, and mole fractions to a CSV file
-f.write_csv('burner_flame.csv', quiet=False)
+f.save('burner_flame.csv', basis='mole', overwrite=True)
