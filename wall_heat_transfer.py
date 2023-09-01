@@ -51,6 +51,6 @@ for n in range(n_reactor):
     dist = n * dx
     u = mdot / area / r.thermo.density # velocity
     t_res += r.mass / mdot  # residence time 
-    writer.writerow([dist, u, t_res, r.T, r.thermo.P] + list(gas.X))
+    writer.writerow([dist, u, t_res, r.T, r.thermo.P] + list(r.thermo.X))
 
 outfile.close()
