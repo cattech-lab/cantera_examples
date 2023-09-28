@@ -66,17 +66,21 @@ https://cattech-lab.com/science-tools/cantera-sensitivity-analysis/
 wall_heat_transfer.py   
 https://cattech-lab.com/science-tools/cantera-wall-heat-transfer/
 
+*C++でのプログラミング
+ignition_delay.cpp
+https://cattech-lab.com/science-tools/cantera-CXX/
+
 ## 開発環境
 Anaconda3  
 Python3.7 - 3.10  
-Cantera 2.4.0 - 2.6.0
+Cantera 2.4.0 - 3.0.0
 
 ## 作成者
 株式会社キャットテックラボ  
 https://cattech-lab.com/
 
 ## ライセンス
-Copyright (c) 2020-2022 CATTech.LAB Co., Ltd.  
+Copyright (c) 2020-2023 CATTech.LAB Co., Ltd.  
 The source codes are licensed under [the MIT license](https://opensource.org/licenses/MIT).
 
 Cantera is licensed under a permissive 3-Clause BSD license.
