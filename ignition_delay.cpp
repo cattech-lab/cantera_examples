@@ -1,9 +1,3 @@
-// #include "cantera/thermo/IdealGasPhase.h"
-// #include "cantera/kinetics/BulkKinetics.h"
-// #include "cantera/base/Solution.h"
-// #include "cantera/zerodim.h"
-// #include "cantera/base/Array.h"
-
 #include "cantera/core.h"
 #include "cantera/zerodim.h"
 #include "cantera/kinetics.h"
