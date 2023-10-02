@@ -70,7 +70,7 @@ https://cattech-lab.com/science-tools/cantera-wall-heat-transfer/
 ignition_delay.cpp   
 https://cattech-lab.com/science-tools/cantera-CXX/   
 
-*Fortranでのプログラミング
+*Fortranでのプログラミング   
 Fortran/main.f90   
 Fortran/ct_ftnlib.cpp   
 https://cattech-lab.com/science-tools/cantera-fortran/  
