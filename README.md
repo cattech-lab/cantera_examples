@@ -25,6 +25,10 @@ https://cattech-lab.com/science-tools/cantera-catalytic-combustion/
 catalytic_pfr.py   
 https://cattech-lab.com/science-tools/cantera-catalytic-prf/
 
+*対向流拡散火炎を計算する   
+counter_diffusion_flame.py   
+https://cattech-lab.com/science-tools/cantera-counter-diffusion-flame/
+
 *火炎の構造を解析する   
 flame_structure.py   
 https://cattech-lab.com/science-tools/cantera-flame-structure/
@@ -75,6 +79,7 @@ Fortran/main.f90
 Fortran/ct_ftnlib.cpp   
 https://cattech-lab.com/science-tools/cantera-fortran/  
 
+
 ## 開発環境
 Anaconda3  
 Python3.7 - 3.11  
@@ -85,7 +90,7 @@ Cantera 2.4.0 - 3.0.0
 https://cattech-lab.com/
 
 ## ライセンス
-Copyright (c) 2020-2023 CATTech.LAB Co., Ltd.  
+Copyright (c) 2020-2024 CATTech.LAB Co., Ltd.  
 The source codes are licensed under [the MIT license](https://opensource.org/licenses/MIT).
 
 Cantera is licensed under a permissive 3-Clause BSD license.
