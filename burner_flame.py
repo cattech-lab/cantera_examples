@@ -19,12 +19,12 @@ gas.TPX = Tin, p, comp
 f = ct.BurnerFlame(gas, width=width)
 f.burner.mdot = mdot
 f.set_refine_criteria(ratio=3.0, slope=0.05, curve=0.1)
-f.show_solution()
+f.show()
 
 # Solve
 f.transport_model = 'Multi'
 f.solve(loglevel=1, auto=True)
-f.show_solution()
+f.show()
 
 # write the velocity, temperature, density, and mole fractions to a CSV file
 f.save('burner_flame.csv', basis='mole', overwrite=True)

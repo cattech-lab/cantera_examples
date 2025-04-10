@@ -82,15 +82,15 @@ https://cattech-lab.com/science-tools/cantera-fortran/
 
 ## 開発環境
 Anaconda3  
-Python3.7 - 3.11  
-Cantera 2.4.0 - 3.0.0   
+Python3.7 - 3.13  
+Cantera 2.4.0 - 3.1.0   
 
 ## 作成者
 株式会社キャットテックラボ  
 https://cattech-lab.com/
 
 ## ライセンス
-Copyright (c) 2020-2024 CATTech.LAB Co., Ltd.  
+Copyright (c) 2020-2025 CATTech.LAB Co., Ltd.  
 The source codes are licensed under [the MIT license](https://opensource.org/licenses/MIT).
 
 Cantera is licensed under a permissive 3-Clause BSD license.

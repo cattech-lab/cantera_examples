@@ -24,7 +24,7 @@ f.set_refine_criteria(ratio=3, slope=0.06, curve=0.12)
 # Solve 
 f.transport_model = 'multicomponent'
 f.solve(loglevel=1, auto=True)
-f.show_solution()
+f.show()
 
 # write the velocity, temperature, density, and mole fractions to a CSV file
 f.save('h2_flame.csv', basis='mole', overwrite=True)

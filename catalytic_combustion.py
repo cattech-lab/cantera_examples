@@ -34,7 +34,7 @@ sim.surface.T = tsurf
 # solve
 sim.set_refine_criteria(3.0, 0.06, 0.12, 0.0)
 sim.solve(loglevel=1, auto=True)
-sim.show_solution()
+sim.show()
 
 # write csv file 
 sim.save('catalytic_combustion.csv', basis='mole', overwrite=True)
