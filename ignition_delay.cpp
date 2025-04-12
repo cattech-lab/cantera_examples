@@ -23,7 +23,7 @@ int main()
 
     // define reactor
     IdealGasReactor r;
-    r.insert(sol);
+    r.setSolution(sol);
 
     ReactorNet sim;
     sim.addReactor(r);
